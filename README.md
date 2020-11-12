@@ -2,6 +2,14 @@
 
 https://github.com/reflexjs/reflex
 
+<a
+  href="https://codesandbox.io/s/reflexjs-demo-20yv0?file=/pages/index.js"
+  target="_blank"
+  title="Try Reflexjss on CodeSandbox"
+>
+  <img src="https://codesandbox.io/static/img/play-codesandbox.svg" />
+</a>
+
 ## Installation
 
 ```sh
