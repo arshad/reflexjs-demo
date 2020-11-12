@@ -1,6 +1,6 @@
 // https://github.com/reflexjs/reflex
-// Reflexjs allows you to style your component using style props.
-// Using style props you style a component by passing props to it.
+// Reflexjs lets you style your component using style props.
+// Using style props, you style a component by passing props to it.
 
 // Every css property is available as style props. This means you
 // can get started without a learning curve.
@@ -9,20 +9,29 @@
 // padding, `size` for `width` and `height` for convenience.
 
 export default function IndexPage() {
-  // This div has padding: 10px, margin-left: auto and margin-right: auto.
   return (
+    // --------------------------------------------------------------------
+    //  ✅ Style props
+    // --------------------------------------------------------------------
+    // This div has padding: 10px, margin-left: auto and margin-right: auto.
     <div padding="10" mx="auto" maxW="800px">
       {/* This is a heading with inline styles. */}
       <h1 fontSize="50px" fontWeight="bold">
         This is a heading
       </h1>
 
+      {/* -------------------------------------------------------------------- */}
+      {/*  ✅ Using a theme */}
+      {/* -------------------------------------------------------------------- */}
       {/* This paragraph is using values (or tokens) from a theme */}
       {/* See `theme.js`. */}
       <p fontSize="xl" fontWeight="hairline" mb="10">
         This is a paragraph.
       </p>
 
+      {/* -------------------------------------------------------------------- */}
+      {/*  ✅ A button */}
+      {/* -------------------------------------------------------------------- */}
       {/* A button with inline styles */}
       <button
         d="flex"
@@ -36,11 +45,17 @@ export default function IndexPage() {
         A button
       </button>
 
+      {/* -------------------------------------------------------------------- */}
+      {/*  ✅ Variants */}
+      {/* -------------------------------------------------------------------- */}
       {/* Use variant to extract styles to your theme.js */}
       {/* This is handy for re-usable styles */}
       {/* Take a look at button -> primary in theme.js */}
       <button variant="button.primary">Primary</button>
 
+      {/* -------------------------------------------------------------------- */}
+      {/*  ✅ Variant composition */}
+      {/* -------------------------------------------------------------------- */}
       {/* Variants can be composed. */}
       <button variant="button.primary.lg" ml="3">
         Large button
@@ -52,6 +67,9 @@ export default function IndexPage() {
       {/* You can combine multiple variants together. */}
       <button variant="button.primary text.caps">Button</button>
 
+      {/* -------------------------------------------------------------------- */}
+      {/*  ✅ Responsive */}
+      {/* -------------------------------------------------------------------- */}
       {/* Responsive styles is really easy as well. */}
       {/* Use a `|` to create mobile first responsive styles */}
       {/* This div is 300x300px on mobile and 600x600px on large devices */}
